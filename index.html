@@ -38,7 +38,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/buho1.svg" alt="..." />
+                <img class="masthead-avatar mb-5" src="assets/img/buho1.svg" alt="Logo" />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0 text-purple">Eurekas</h1>
 
@@ -107,27 +107,36 @@
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                    <br>
+                                    <span>Colocación de cierres y botones</span>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/cremalleraAI.svg" alt="cremallera" />
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
                     <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                    <br>
+                                    <p>Confección de uniformes</p>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/uniformesAI.svg" alt="uniformes" />
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                    <br>
+                                    <p>Reciclaje de ropa</p>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/reciclajeAI.svg" alt="recilaje" />
                         </div>
                     </div>
                 </div>
@@ -166,7 +175,7 @@
         <section class="page-section bg-light-primary" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Ponte en contacto</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -176,38 +185,32 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                        <form action="https://formsubmit.co/vendocavadevino@gmail.com" id="contactForm" method="post">
                             <!-- Name input-->
                             <div class="form-floating mb-3 ">
-                                <input class="form-control bg-light-primary" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name" class="text-dark-purple">Nombre completo</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre</div>
+                                <input class="form-control bg-light-primary" id="name" type="text" placeholder="Enter your name..."/>
+                                <label for="name" name="Nombre" class="text-dark-purple">Nombre completo</label>
+                                <div class="invalid-feedback">Se requiere un nombre</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control bg-light-primary" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control bg-light-primary" id="email" type="email" name="email" placeholder="name@example.com"/>
                                 <label for="email" class="text-dark-purple">Email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un Email.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido.</div>
+                                <div class="invalid-feedback">Se requiere un Email.</div>
+                                <div class="invalid-feedback">Email no valido.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control bg-light-primary" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone" class="text-dark-purple">Numero de telefono</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un numero de telefono</div>
+                                <input class="form-control bg-light-primary" id="phone" type="tel" placeholder="(123) 456-7890"/>
+                                <label for="phone" name="Telefono" class="text-dark-purple">Numero de telefono</label>
+                                <div class="invalid-feedback">Se requiere un numero de telefono</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control bg-light-primary" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message" class="text-dark-purple">Mensaje</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje</div>
+                                <textarea class="form-control bg-light-primary" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                                <label for="message" name="Mensaje" class="text-dark-purple">Mensaje</label>
+                                <div class="invalid-feedback">Se requiere un mensaje</div>
                             </div>
                             <!-- Submit success message-->
                             <!---->
@@ -215,8 +218,8 @@
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
+                                    <div class="fw-bolder">¡Mensaje enviado!</div>
+                                    Pronto estaré en contacto contigo
                                     <br />
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
@@ -225,9 +228,9 @@
                             <!---->
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar el mensaje</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -285,7 +288,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/supersAI.svg" alt="..." />
+                                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/supersAI.svg" alt="disfraces" />
                                     <!-- Portfolio Modal - Text-->
                                     <h5 class="mb-4">¡Hago realidad tu sueño!</h5>
                                     <p>¿Quieres cumplir tu sueño de poder disfrazarte de tu personaje favorito? <strong>¡Yo te lo puedo hacer realidad!</strong> Disfrazate de tu personaje de ficción favorito</p>
@@ -376,7 +379,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Colocación de cierres y botones</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -384,9 +387,10 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/game.png" alt="..." />
+                                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/cremalleraAI.svg" alt="cremallera" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <h5 class="mb-4">¡Cambios de cierres y botones!</h5>
+                                    <p>Si tienes una prenda que le falta un botón o el cierre está roto <strong>¡Yo puedo arreglarlo!</strong> Hago colocación de cierres botones y broches para tus prendas.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Cerrar
@@ -408,7 +412,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Confección de uniformes</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -416,9 +420,10 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/uniformesAI.svg" alt="uniformes" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <h5 class="mb-4">¡Confecciono uniformes a tu medida!</h5>
+                                    <p>¿Te hace falta un uniforme? <strong>¡Te lo puedo confeccionar a tu medida!</strong> Puedo confeccionarte un uniforme según tus gustos y comodidades.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Cerrar
@@ -440,7 +445,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Reciclaje de ropa</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -448,9 +453,10 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/reciclajeAI.svg" alt="reciclaje" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <h5 class="mb-4">¡No tires tu ropa, reciclala!</h5>
+                                    <p>Si tienes ropa vieja que ya no usas <strong>¡No la tires!</strong> Recicla y convierte esa ropa vieja en nuevas prendas para tu uso.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Cerrar
@@ -470,6 +476,5 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
