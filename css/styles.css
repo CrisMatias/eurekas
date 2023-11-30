@@ -11077,6 +11077,14 @@ html {
   color: #fff;
 }
 
+.footer-info{
+  color: #d8c4ee;
+}
+
+.footer-info:hover, .footer-info:focus{
+  color: #e9def6;
+}
+
 .copyright {
-  background-color: #1a252f;
+  background-color: #563370;
 }
