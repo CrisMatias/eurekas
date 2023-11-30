@@ -189,8 +189,8 @@
                         <form action="https://formsubmit.co/vendocavadevino@gmail.com" id="contactForm" method="post">
                             <!-- Name input-->
                             <div class="form-floating mb-3 ">
-                                <input class="form-control bg-light-primary" id="name" type="text" placeholder="Enter your name..."/>
-                                <label for="name" name="Nombre" class="text-dark-purple">Nombre completo</label>
+                                <input class="form-control bg-light-primary" id="name" type="text" name="Nombre" placeholder="Enter your name..."/>
+                                <label for="name"  class="text-dark-purple">Nombre completo</label>
                                 <div class="invalid-feedback">Se requiere un nombre</div>
                             </div>
                             <!-- Email address input-->
@@ -202,14 +202,14 @@
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control bg-light-primary" id="phone" type="tel" placeholder="(123) 456-7890"/>
-                                <label for="phone" name="Telefono" class="text-dark-purple">Numero de telefono</label>
+                                <input class="form-control bg-light-primary" name="Telefono" id="phone" type="tel" placeholder="(123) 456-7890"/>
+                                <label for="phone" class="text-dark-purple">Numero de telefono</label>
                                 <div class="invalid-feedback">Se requiere un numero de telefono</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control bg-light-primary" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
-                                <label for="message" name="Mensaje" class="text-dark-purple">Mensaje</label>
+                                <textarea class="form-control bg-light-primary" id="message" type="text" name="Mensaje" placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                                <label for="message" class="text-dark-purple">Mensaje</label>
                                 <div class="invalid-feedback">Se requiere un mensaje</div>
                             </div>
                             <!-- Submit success message-->
